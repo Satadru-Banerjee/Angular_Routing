@@ -1,0 +1,23 @@
+<button (click)="togDetails()">
+    {{showDetails?'Hide ':'Show '}}Details
+  </button>  
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th *ngIf='showDetails'>Gender</th>
+            <th *ngIf='showDetails'>Designation</th>
+            <th *ngIf='showDetails'>Salary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td>{{ employee.Empid }}</td>
+            <td>{{ employee.name }}</td>
+            <td *ngIf='showDetails'>{{ employee.gender }}</td>
+            <td *ngIf='showDetails'>{{ employee.designation }}</td>
+            <td *ngIf='showDetails'>{{ employee.salary }}</td>
+        </tr>
+    </tbody>
+</table>    

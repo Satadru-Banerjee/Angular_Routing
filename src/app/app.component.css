@@ -1,0 +1,25 @@
+h1{
+    color: #4CAF50;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+
+  th {
+    background-color: #7caf7d;
+    color: white;
+    border: 1px solid black;
+    width: 50%;
+  }
+td{
+    border: 1px solid black
+}
